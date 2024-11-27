@@ -11,5 +11,5 @@ spec:
   definition:
     $text: ../openshift-api.spec.json
 relations:
-  - type: partOf
+  - type: providedBy
     targetRef: resource:default/dev-cluster-infra
