@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  namespace: default
+  name: developer-hub-postgres
+  description: The Postgres database used by Developer Hub for storing catalog and plugin data.
+spec:
+  type: database
+  owner: group:rhdh
+  tags:
+    - backstage
+    - rhdh
+    - postgres
+    - database
+relations:
+  - type: partOf
+    targetRef: resource:default/dev-cluster-infra
+  - type: ownedBy
+    targetRef: group:default/rhdh
+  - type: usedBy
+    targetRef: component:default/developer-hub
+

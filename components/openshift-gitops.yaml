@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: openshift-gitops
+  description: OpenShift GitOps (Argo CD) cluster used to manage infrastructure.
+spec:
+  type: service
+  lifecycle: production
+  owner: group:rhdh
+  system: dev-cluster-services
+relations:
+  - type: partOf
+    targetRef: system:default/dev-cluster-services

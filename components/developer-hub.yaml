@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  namespace: default
+  name: developer-hub
+  description: An internal developer portal providing a Software Catalog and integrations.
+spec:
+  type: service
+  lifecycle: production
+  owner: group:rhdh
+  system: dev-cluster-services
+relations:
+  - type: partOf
+    targetRef: system:default/dev-cluster-services

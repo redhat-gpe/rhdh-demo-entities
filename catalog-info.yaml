@@ -1,0 +1,40 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: apis
+spec:
+  type: url
+  target: ./apis/
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: components
+spec:
+  type: url
+  target: ./components/
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: domains
+spec:
+  type: url
+  target: ./domains/
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: resources
+spec:
+  type: url
+  target: ./resources/
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: systems
+spec:
+  type: url
+  target: ./systems/
