@@ -12,11 +12,10 @@ spec:
     - rhdh
     - postgres
     - database
-relations:
-  - type: partOf
-    targetRef: resource:default/dev-cluster-infra
-  - type: ownedBy
-    targetRef: group:default/rhdh
-  - type: usedBy
-    targetRef: component:default/developer-hub
+  partOf:
+    - resource:default/dev-cluster-infra
+  ownedBy:
+    - group:default/rhdh
+  usedBy:
+    - component:default/developer-hub
 

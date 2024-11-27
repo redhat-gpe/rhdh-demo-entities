@@ -7,9 +7,8 @@ metadata:
 spec:
   type: image-registry
   owner: group:rhdh
-relations:
-  - type: partOf
-    targetRef: resource:default/dev-cluster-infra
+  partOf:
+    - resource:default/dev-cluster-infra
 links:
   - url: https://quay-GUID.apps.cluster-GUID.GUID.CLUSTER.opentlc.com/
     title: Quay Console

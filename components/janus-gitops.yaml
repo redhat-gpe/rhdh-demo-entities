@@ -8,6 +8,5 @@ spec:
   lifecycle: production
   owner: group:rhdh
   system: dev-cluster-services
-relations:
-  - type: partOf
-    targetRef: system:default/dev-cluster-services
+  partOf:
+    - system:default/dev-cluster-services

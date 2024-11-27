@@ -8,6 +8,5 @@ spec:
   type: api-server
   lifecycle: production
   owner: group:rhdh
-relations:
-  - type: provides
-    targetRef: api:default/openshift-cluster-api
+  providesApi:
+    - api:default/openshift-cluster-api
