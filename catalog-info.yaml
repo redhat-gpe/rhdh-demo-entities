@@ -5,7 +5,7 @@ metadata:
   name: apis
 spec:
   type: url
-  target: ./apis/
+  target: ./apis/**/*.yaml
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Location
@@ -13,7 +13,7 @@ metadata:
   name: components
 spec:
   type: url
-  target: ./components/
+  target: ./components/**/*.yaml
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Location
@@ -21,7 +21,7 @@ metadata:
   name: domains
 spec:
   type: url
-  target: ./domains/
+  target: ./domains/**/*.yaml
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Location
@@ -29,7 +29,7 @@ metadata:
   name: resources
 spec:
   type: url
-  target: ./resources/
+  target: ./resources/**/*.yaml
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Location
@@ -37,4 +37,4 @@ metadata:
   name: systems
 spec:
   type: url
-  target: ./systems/
+  target: ./systems/**/*.yaml
