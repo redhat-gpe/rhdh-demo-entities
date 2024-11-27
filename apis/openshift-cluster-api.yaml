@@ -10,6 +10,3 @@ spec:
   owner: group:rhdh
   definition:
     $text: ../openshift-api.spec.json
-relations:
-  - type: providedBy
-    targetRef: resource:default/dev-cluster-infra

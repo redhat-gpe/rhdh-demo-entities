@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  namespace: default
+  name: openshift-api-server
+  description: The API server for the OpenShift cluster.
+spec:
+  type: api-server
+  lifecycle: production
+  owner: group:rhdh
+relations:
+  - type: provides
+    targetRef: api:default/openshift-cluster-api
