@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: all-locations
+spec:
+  targets: 
+    - ./locations.resources.yaml
+    - ./locations.systems.yaml
+    - ./locations.components.yaml
+    - ./locations.apis.yaml
