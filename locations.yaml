@@ -4,7 +4,7 @@ metadata:
   name: all-locations
 spec:
   targets: 
-    - ./location.resources.yaml
     - ./location.systems.yaml
+    - ./location.resources.yaml
     - ./location.components.yaml
     - ./location.apis.yaml
