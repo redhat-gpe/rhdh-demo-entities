@@ -13,9 +13,6 @@ spec:
     - postgres
     - database
   partOf:
-    - resource:default/dev-cluster-infra
+    - system:default/dev-cluster-services
   ownedBy:
     - group:default/rhdh
-  usedBy:
-    - component:default/developer-hub
-

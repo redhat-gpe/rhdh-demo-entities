@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: developer-hub
+  description: System encompassing Red Hat Developer Hub components
+spec:
+  owner: group:rhdh
+  type: dashboard
+  ownedBy:
+    - group:default/rhdh
+  partOf:
+    - system:default/ev-cluster-services

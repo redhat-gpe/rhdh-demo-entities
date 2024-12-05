@@ -6,7 +6,6 @@ metadata:
 spec:
   owner: group:rhdh
   type: openshift-system
-  partOf:
-    - resource:default/dev-cluster-infra
+  domain: openshift
   ownedBy:
     - group:default/rhdh

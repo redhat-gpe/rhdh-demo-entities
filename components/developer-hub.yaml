@@ -6,6 +6,8 @@ metadata:
   description: An internal developer portal providing a Software Catalog and integrations.
 spec:
   type: service
+  tags:
+    - nodejs
   lifecycle: production
   owner: group:rhdh
   system: dev-cluster-services
