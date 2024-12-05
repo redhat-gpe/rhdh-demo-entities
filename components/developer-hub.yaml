@@ -11,4 +11,9 @@ spec:
   lifecycle: production
   owner: group:rhdh
   partOf:
-    - system:default/developer-hub
+    - system:default/dev-cluster-services
+  dependsOn:
+    - resource:default/developer-hub-postgres
+    - resource:default/openshift-api-server
+    - resource:default/quay-registry
+    - component:default/developer-hub-gitops
