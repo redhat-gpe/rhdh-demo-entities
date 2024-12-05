@@ -9,4 +9,4 @@ spec:
   ownedBy:
     - group:default/rhdh
   partOf:
-    - system:default/ev-cluster-services
+    - system:default/dev-cluster-services
