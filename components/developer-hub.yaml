@@ -10,6 +10,5 @@ spec:
     - nodejs
   lifecycle: production
   owner: group:rhdh
-  system: dev-cluster-services
   partOf:
-    - system:default/dev-cluster-services
+    - system:default/developer-hub

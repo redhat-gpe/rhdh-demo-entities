@@ -13,6 +13,6 @@ spec:
     - postgres
     - database
   partOf:
-    - system:default/dev-cluster-services
+    - system:default/developer-hub
   ownedBy:
     - group:default/rhdh
