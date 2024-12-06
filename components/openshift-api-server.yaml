@@ -1,11 +1,11 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
   namespace: default
   name: openshift-api-server
   description: The API server for the OpenShift cluster.
 spec:
-  type: api-server
+  type: service
   lifecycle: production
   owner: group:rhdh
   providesApi:

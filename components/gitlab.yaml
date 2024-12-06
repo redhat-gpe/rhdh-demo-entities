@@ -2,12 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   namespace: default
-  name: developer-hub
-  description: An internal developer portal providing a Software Catalog and integrations.
+  name: gitlab
+  description: Git repository and CI platform.
 spec:
   type: dev-service
-  tags:
-    - nodejs
   lifecycle: production
   owner: group:rhdh
   partOf:

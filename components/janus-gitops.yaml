@@ -4,7 +4,7 @@ metadata:
   name: developer-hub-gitops
   description: OpenShift GitOps (Argo CD) cluster used to manage infrastructure.
 spec:
-  type: service
+  type: dev-service
   lifecycle: production
   owner: group:rhdh
   system: dev-cluster-services

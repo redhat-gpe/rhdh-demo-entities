@@ -4,7 +4,7 @@ metadata:
   name: openshift-devspaces
   description: OpenShift DevSpaces - A web-based IDE
 spec:
-  type: service
+  type: dev-service
   lifecycle: production
   owner: group:rhdh
   system: dev-cluster-services

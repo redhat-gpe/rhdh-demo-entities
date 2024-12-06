@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  namespace: default
+  name: quay-api
+  description: The API server the Quay.io registry.
+spec:
+  type: openapi
+  lifecycle: production
+  owner: group:rhdh
+  definition:
+    $text: ../quay-api.spec.json

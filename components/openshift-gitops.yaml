@@ -10,3 +10,5 @@ spec:
   system: dev-cluster-services
   partOf:
     - system:default/dev-cluster-services
+  consumesApi:
+    - api:default/openshift-cluster-api
