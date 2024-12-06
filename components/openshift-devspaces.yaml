@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: openshift-devspaces
+  description: OpenShift DevSpaces - A web-based IDE
+spec:
+  type: service
+  lifecycle: production
+  owner: group:rhdh
+  system: dev-cluster-services
+  partOf:
+    - system:default/dev-cluster-services
