@@ -14,6 +14,9 @@ spec:
     - system:default/dev-cluster-services
   dependsOn:
     - resource:default/developer-hub-postgres
-    - resource:default/openshift-api-server
-    - resource:default/quay-registry
+    - component:default/openshift-api-server
+    - component:default/quay
     - component:default/developer-hub-gitops
+  consumesApis:
+    - api:default/openshift-cluster-api
+    - api:default/quay-api
