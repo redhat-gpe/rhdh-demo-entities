@@ -10,4 +10,6 @@ spec:
   owner: group:rhdh
   system: dev-cluster-services
   partOf:
-    - targetRef: system:default/dev-cluster-services
+    - system:default/dev-cluster-services
+  consumesApi:
+    - api:default/quay-api
