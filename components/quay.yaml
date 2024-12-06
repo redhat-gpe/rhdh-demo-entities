@@ -14,3 +14,5 @@ spec:
   system: dev-cluster-services
   partOf:
     - system:default/dev-cluster-services
+  providesApi:
+    - api:default/quay-api
