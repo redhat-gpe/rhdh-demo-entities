@@ -11,5 +11,5 @@ spec:
   system: dev-cluster-services
   partOf:
     - system:default/dev-cluster-services
-  consumesApi:
+  consumesApis:
     - api:default/quay-api

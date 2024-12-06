@@ -8,5 +8,5 @@ spec:
   type: service
   lifecycle: production
   owner: group:rhdh
-  providesApi:
+  providesApis:
     - api:default/openshift-cluster-api
