@@ -1,8 +1,12 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
   name: openshift-gitops
   description: OpenShift GitOps (Argo CD) cluster used to manage infrastructure.
+  annotations:
+    gitlab.com/instance: ''
+    gitlab.com/project-slug: ''
+    gitlab.com/project-id: ''
   links:
   - url: https://argocd-server-openshift-gitops{{ cluster_subdomain }}
     title: Infrastructure GitOps
@@ -10,8 +14,6 @@ spec:
   type: service
   lifecycle: production
   owner: group:rhdh
-  system: dev-cluster-services
-  partOf:
-    - system:default/dev-cluster-services
+  system: default/dev-cluster-services
   consumesApis:
     - api:default/openshift-cluster-api
