@@ -3,6 +3,9 @@ kind: Component
 metadata:
   name: openshift-gitops
   description: OpenShift GitOps (Argo CD) cluster used to manage infrastructure.
+  links:
+  - url: https://argocd-server-openshift-gitops{{ cluster_subdomain }}
+    title: Infrastructure GitOps
 spec:
   type: service
   lifecycle: production

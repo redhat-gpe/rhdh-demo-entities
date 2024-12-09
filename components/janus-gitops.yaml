@@ -2,7 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: developer-hub-gitops
-  description: OpenShift GitOps (Argo CD) cluster used to manage infrastructure.
+  description: OpenShift GitOps (Argo CD) cluster used to manage developer workloads.
+  links:
+    - url: https://argocd-server-janus-argocd{{ cluster_subdomain }}
+      title: Developer GitOps
 spec:
   type: dev-service
   lifecycle: production
