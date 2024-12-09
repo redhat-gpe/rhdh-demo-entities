@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: all-locations
+  name: rhdh-platform-entities
 spec:
   targets: 
     - ./location.domains.yaml

@@ -3,6 +3,9 @@ kind: Component
 metadata:
   name: openshift-devspaces
   description: OpenShift DevSpaces - A web-based IDE
+  links:
+    - url: https://devspaces{{ cluster_subdomain }}
+      title: DevSpaces Console
 spec:
   type: dev-service
   lifecycle: production

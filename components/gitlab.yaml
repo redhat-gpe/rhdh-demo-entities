@@ -4,6 +4,9 @@ metadata:
   namespace: default
   name: gitlab
   description: Git repository and CI platform.
+  links:
+    - url: https://{{ gitlab_host }}
+      title: GitLab Console
 spec:
   type: dev-service
   lifecycle: production

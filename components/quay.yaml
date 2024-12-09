@@ -5,7 +5,7 @@ metadata:
   name: quay
   description: A container image registry service.
   links:
-    - url: https://quay-GUID.apps.cluster-GUID.GUID.CLUSTER.opentlc.com/
+    - url: https://{{ quay_host }}
       title: Quay Console
 spec:
   type: image-registry

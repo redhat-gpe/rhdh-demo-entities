@@ -4,6 +4,9 @@ metadata:
   namespace: default
   name: developer-hub
   description: An internal developer portal providing a Software Catalog and integrations.
+  links:
+    - url: https://backstage-backstage{{ cluster_subdomain }}
+      title: Developer Hub
 spec:
   type: dev-service
   tags:

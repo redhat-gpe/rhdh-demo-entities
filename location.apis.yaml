@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: apis
+  name: rhdh-platform-apis
 spec:
   type: url
   target: ./apis/**/*.yaml
