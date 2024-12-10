@@ -4,9 +4,6 @@ metadata:
   namespace: default
   name: openshift-api-server
   description: The API server for the OpenShift cluster.
-  links:
-    - url: https://api{{ cluster_subdomain }}
-      title: OpenShift API URL
 spec:
   type: service
   lifecycle: production
