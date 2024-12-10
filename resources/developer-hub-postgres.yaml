@@ -12,7 +12,6 @@ spec:
     - rhdh
     - postgres
     - database
-  partOf:
-    - system:default/developer-hub
+  system: default/dev-cluster-services
   ownedBy:
     - group:default/rhdh

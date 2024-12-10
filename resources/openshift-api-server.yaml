@@ -1,15 +1,14 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
   namespace: default
   name: openshift-api-server
   description: The API server for the OpenShift cluster.
-  links:
-    url: https://api{{ cluster_subdomain }}:6443
-    title: OpenShift API URL
 spec:
   type: service
   lifecycle: production
   owner: group:rhdh
   providesApis:
     - api:default/openshift-cluster-api
+  system: default/dev-cluster-services
+    

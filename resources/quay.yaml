@@ -1,5 +1,5 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
   namespace: default
   name: quay
@@ -11,8 +11,6 @@ spec:
   type: image-registry
   lifecycle: production
   owner: group:rhdh
-  system: dev-cluster-services
-  partOf:
-    - system:default/dev-cluster-services
+  system: default/dev-cluster-services
   providesApis:
     - api:default/quay-api

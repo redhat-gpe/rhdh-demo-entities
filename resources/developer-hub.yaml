@@ -1,5 +1,5 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
   namespace: default
   name: developer-hub
@@ -13,13 +13,12 @@ spec:
     - nodejs
   lifecycle: production
   owner: group:rhdh
-  partOf:
-    - system:default/dev-cluster-services
+  system: default/dev-cluster-services
   dependsOn:
     - resource:default/developer-hub-postgres
-    - component:default/openshift-api-server
-    - component:default/quay
-    - component:default/developer-hub-gitops
+    - resource:default/openshift-api-server
+    - resource:default/quay
+    - resource:default/developer-hub-gitops
   consumesApis:
     - api:default/openshift-cluster-api
     - api:default/quay-api
